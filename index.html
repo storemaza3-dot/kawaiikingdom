@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1373714356885258355/1373792786033152152/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Kingdom</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fdf6f9, #ffe8f0);
+      font-family: 'Comic Neue', cursive;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff6ec7;
+      text-shadow: 2px 2px #fff0f7;
+      margin-top: 40px;
+    }
+
+    .button-container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-button {
+      background-color: #ffb6e6;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.2em;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      width: 240px;
+    }
+
+    .nav-button:hover {
+      background-color: #ff82ca;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .clouds {
+      position: absolute;
+      width: 200%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      animation: floatClouds 60s linear infinite;
+    }
+
+    @keyframes floatClouds {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <img class="clouds" src="https://www.transparenttextures.com/patterns/cloudy-day.png" alt="clouds" />
+
+  <h1>Kawaii Kingdom</h1>
+
+  <div class="button-container">
+    <button class="nav-button" onclick="window.open('https://opensea.io/collection/kawaii-kingdom-official', '_blank')">Kawaii Kingdom</button>
+    <button class="nav-button" onclick="window.open('https://opensea.io/collection/kawaii-kingdom-drops', '_blank')">Kawaii Kingdom Drops</button>
+    <button class="nav-button" onclick="window.open('https://x.com/kawaiikingdom12', '_blank')">Twitter</button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/25/audio_66d6ddf63f.mp3?filename=playground-143899.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
